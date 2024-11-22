@@ -1,4 +1,7 @@
 from deck import Deck
 
-deck = Deck()
-print(deck)
+main_deck = Deck()
+print(main_deck)
+print("---------")
+main_deck.shuffle_deck()
+print(main_deck)
