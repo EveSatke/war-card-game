@@ -9,19 +9,16 @@ class Deck:
         self.create_deck()
 
     def create_deck(self):
-        self._cards = []
+        self.cards = []
 
         for suit in Deck.SUITS:
             for rank in Deck.RANKS:
                 self.cards.append(Card(suit, rank))
 
     def __str__(self):
-        return self._cards.__str__()
+        return self.cards.__str__()
     
     def shuffle_deck(self):
         random.shuffle(self.cards)
 
-    @property
-    def deck(self):
-        return self._cards
             
