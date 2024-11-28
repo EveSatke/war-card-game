@@ -1,7 +1,6 @@
 from deck import Deck
+from wargame import WarGame
 
-main_deck = Deck()
-print(main_deck)
-print("---------")
-main_deck.shuffle_deck()
-print(main_deck)
+game = WarGame()
+game.deal_cards()
+print(game)
