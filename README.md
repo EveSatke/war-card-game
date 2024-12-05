@@ -8,7 +8,7 @@
   - Players split the deck evenly at the start of the game
   - Each player reveals the top card of their deck
   - The player with the higher card value wins the round and collects both cards
-  - In case of a tie, initiate a "war" where players place additional cards face down and then compare another card
+  - In case of a tie, initiate a "war" where players place additional 3 cards face down and then compare another card
   - The game ends when one player collects all the cards or a set number of rounds are played
 
 ### Deck and Card Management
