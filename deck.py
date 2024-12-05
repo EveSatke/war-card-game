@@ -1,8 +1,9 @@
 from card import Card
 import random
+from colorama import Fore
 
 class Deck:
-    SUITS = ["Hearts", "Spades", "Diamonds", "Clubs"]
+    SUITS = [f"{Fore.RED}♥️", f"{Fore.BLACK}♠️", f"{Fore.RED}♦️", f"{Fore.BLACK}♣️"]
     RANKS = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
 
     def __init__(self):
@@ -11,8 +12,8 @@ class Deck:
     def create_deck(self):
         self.cards = []
 
-        for suit in Deck.SUITS:
-            for rank in Deck.RANKS:
+        for suit in self.SUITS:
+            for rank in self.RANKS:
                 self.cards.append(Card(suit, rank))
 
     def __str__(self):

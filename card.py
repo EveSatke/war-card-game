@@ -21,10 +21,10 @@ class Card:
         self.rank = rank
 
     def compare_value(self, other: "Card"):
-        return Card.RANKS[self.rank] - Card.RANKS[other.rank]
+        return self.RANKS[self.rank] - self.RANKS[other.rank]
 
     def __str__(self):
-        return f"{self.rank} of {self.suit}"
+        return f"{self.rank} {self.suit}"
 
     def __repr__(self):
         return f"Rank= {self.rank} Suit= {self.suit}"
