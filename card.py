@@ -21,7 +21,7 @@ class Card:
         self.rank = rank
 
     def compare_value(self, other: "Card"):
-        return self.RANKS[self.rank] - self.RANKS[other.rank]
+        return Card.RANKS[self.rank] - Card.RANKS[other.rank]
 
     def __str__(self):
         return f"{self.rank} {self.suit}"
