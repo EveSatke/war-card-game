@@ -1,4 +1,3 @@
-from deck import Deck
 from wargame import WarGame
 
 def main():

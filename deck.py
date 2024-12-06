@@ -13,7 +13,7 @@ class Deck:
         self.cards = []
 
         for suit in self.SUITS:
-            for rank in self.RANKS:
+            for rank in Deck.RANKS:
                 self.cards.append(Card(suit, rank))
 
     def __str__(self):
